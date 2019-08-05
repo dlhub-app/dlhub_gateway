@@ -16,7 +16,7 @@ setup_args = dict(
     author='dlhub.app (Originally by Jupyter Development Team)',
     author_email='dlhub.app@gmail.com',
     url='https://github.com/dlhub-app/dlhub_gateway',
-    download_url = 'https://github.com/dlhub-app/kernel_gateway/archive/2.5.0.tar.gz',
+    download_url = 'https://github.com/dlhub-app/dlhub_gateway/archive/1.0.0.tar.gz',
     description='A web server for spawning and communicating with Jupyter kernels',
     long_description='''\
 DLHub Gateway is just a copy of the official Jupyter Kernel Gateway with minor changes to make it
