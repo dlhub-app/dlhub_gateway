@@ -1,0 +1,21 @@
+dist: xenial   # required for Python >= 3.7
+sudo: false
+language: python
+python:
+    - 2.7
+    - 3.4
+    - 3.5
+    - 3.6
+    - 3.7
+
+env:
+    - ASYNC_TEST_TIMEOUT=10
+install:
+    - pip install --upgrade setuptools pip
+    - python setup.py bdist_wheel sdist
+    - pip install dist/*.whl coverage
+    - pip freeze
+script:
+    - jupyter kernelgateway --help
+    - nosetests -x --process-restartworker --with-coverage --cover-package=kernel_gateway
+    - pip uninstall -y jupyter_kernel_gateway
