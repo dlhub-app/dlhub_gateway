@@ -49,11 +49,7 @@ more accessible, especially for our Windows users.
         'notebook>=5.7.6,<6.0',
         'traitlets>=4.2.0',
         'tornado>=4.2.0',
-        'requests>=2.7,<3.0',
-        'numpy',
-        'pandas',
-        'sklearn',
-        'tensorflow'
+        'requests>=2.7,<3.0'
     ],
     classifiers=[
         'Intended Audience :: Developers',
